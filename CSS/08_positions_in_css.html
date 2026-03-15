@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Positions in CSS</title>
+	<link rel="stylesheet" href="./08_positions_in_css.css">
+</head>
+<body>
+	<header class="sticky-header">Sticky Header (position: sticky)</header>
+
+	<main class="container">
+		<h1>CSS Position Examples</h1>
+
+		<section class="card">
+			<h2>Static (default)</h2>
+			<div class="box static-box">Static Box</div>
+		</section>
+
+		<section class="card">
+			<h2>Relative</h2>
+			<div class="box relative-box">Relative Box</div>
+		</section>
+
+		<section class="card absolute-parent">
+			<h2>Absolute inside Relative Parent</h2>
+			<div class="box parent-box">Parent (relative)</div>
+			<div class="box absolute-box">Absolute Box</div>
+		</section>
+
+		<p class="space-note">
+			Scroll to keep seeing sticky and fixed examples.
+		</p>
+	</main>
+
+	<div class="fixed-badge">Fixed Badge</div>
+</body>
+</html>

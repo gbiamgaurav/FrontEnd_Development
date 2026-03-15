@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background: #f8fafc;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #0f172a;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 36px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.note {
+  margin-bottom: 18px;
+}
+
+.box {
+  width: 100%;
+  border: 3px solid #1d4ed8;
+  background: #dbeafe;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.next-box {
+  border: 2px solid #0f766e;
+  background: #ccfbf1;
+  padding: 16px;
+  margin-top: 28px;
+}

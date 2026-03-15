@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111827;
+}
+
+.card {
+  width: min(680px, 92vw);
+  padding: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.regular-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.bold-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.italic-text {
+  font-size: 19px;
+  font-style: italic;
+}
+
+.spaced-text {
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+/* Simple example: change text color */
+.colored-text {
+	color: #e63946;
+}
+
+/* Optional: style the heading differently */
+h1 {
+	color: #1d3557;
+}
