@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Text</title>
+    <style>
+        :root {
+            --bg-1: #edf7ff;
+            --bg-2: #fef5e8;
+            --card: #ffffff;
+            --title: #1f2a44;
+            --text: #33415c;
+            --accent: #0d63c7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+            color: var(--text);
+            background: linear-gradient(130deg, var(--bg-1), var(--bg-2));
+        }
+
+        .card {
+            width: min(900px, 100%);
+            display: grid;
+            gap: 18px;
+            grid-template-columns: 1fr;
+            background: var(--card);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 14px 34px rgba(30, 43, 72, 0.14);
+        }
+
+        .image-wrap {
+            margin: 0;
+        }
+
+        .image-wrap img {
+            display: block;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 0 20px 22px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            color: var(--title);
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.7;
+            font-size: clamp(1rem, 1.8vw, 1.08rem);
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        @media (min-width: 760px) {
+            .card {
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch;
+            }
+
+            .image-wrap img {
+                height: 100%;
+                min-height: 360px;
+            }
+
+            .content {
+                padding: 28px;
+                display: grid;
+                align-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <figure class="image-wrap">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80" alt="A calm ocean view with bright blue water and soft waves">
+        </figure>
+
+        <section class="content">
+            <h1>Image Assignment</h1>
+            <p>
+                This is a sample section that combines an image with descriptive text. The layout is responsive,
+                so it looks clean on both desktop and mobile screens. You can replace this text with your own
+                content and swap the picture URL with any image you like. <span class="highlight">Learning HTML
+                becomes easier when content is clearly structured.</span>
+            </p>
+        </section>
+    </article>
+</body>
+</html>
